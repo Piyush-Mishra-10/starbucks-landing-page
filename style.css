@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+
+section {
+    
+    position: relative;
+   
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+
+.logo img {
+  
+    width: 139px;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-basis: 50%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+
+}
+
+header ul li {
+    list-style: none;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 40px;
+    color: #333;
+    font-weight: 400;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.content .textbox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textbox h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+.content .textbox h2 span {
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #459333;
+}
+
+.content .textbox p {
+    color: #333;
+}
+
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+.content .imgbox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+
+}
+
+.content .imgbox img {
+
+    transition: 1s ease-in-out;
+    width: 336px;
+
+}
+
+.content .imgbox img:hover {
+    transform: rotateY(-180deg);
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+
+
+
+}
+
+.thumb li {
+
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+    margin: 0px 20px;
+    transition: transform .5s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+
+    width: 60px;
+}
+
